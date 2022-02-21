@@ -1,6 +1,8 @@
 # matrix
 Verified discord bot (75 + servers!)
 
+top.gg link: https://top.gg/bot/766991441418911744
+
 Matrix is a multipurpose bot, which is currently a work in progress. It has multiple functions, for every need! Matrix removes the need to clutter up your server with multiple bots, since inviting Matrix will remove the need for every single other bot! Matrix's list of features:
 m.help
 m.musichelp
