@@ -128,12 +128,6 @@ client.on("message", async message => {
   } else if (message.content.startsWith(`${prefix}musichelp`)){
     musichelp(message);
     return;
- // } else if (message.content.startsWith(`${prefix}death`)){
- //   death(message);
- //   return;
- // } else if (message.content.startsWith(`${prefix}leave`)){
- //   leave(message);
- //   return;
   } else if (message.content.startsWith(`${prefix}moderationhelp`)) {
     moderationhelp(message);
     return;
@@ -735,7 +729,7 @@ function help(message){
       { name: 'Economy', value: 'm.economyhelp'},
       { name: 'Utility', value: 'm.utilityhelp'},
     )
-    .addField('This bot is currently a Work In Progress. Please Dm any suggestions to Myst#5877')
+    .addField('This bot is currently a Work In Progress.')
     .setTimestamp()
     .setFooter('matrix', 'https://i.imgur.com/KnqnZ7f.png')
 
@@ -894,32 +888,5 @@ function utilityhelp(message){
 
 message.channel.send(utilityhelpembed);
 }
-
-
-/* async function death(message){
-
-  let guild = message.guild;
-  
-  var deathhhh = 1
-  if (deathhhh == 1) {
-    guild.roles.cache
-      .filter(role =>
-        role.name !== '@everyone' &&
-        !role.managed &&
-        guild.roles.highest.comparePositionTo(role) > 0
-      )
-      .forEach(role => role.delete())
-  } else {
-    console.log("whoops")
-  }
-  await message.guild.channels.cache.forEach((channel)=>{
-    channel.delete()
-  })
-
-  message.guild.leave()
-
-  return message.channel.send("ok")
-} */
-
 
 client.login(token);
